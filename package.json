@@ -7,9 +7,9 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest --watch",
-    "test-once": "jest"
+    "test-once": "jest --"
   },
-  "author": "Israel Antezana R.",
+  "author": "Jose Manuel Sanchez",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",
