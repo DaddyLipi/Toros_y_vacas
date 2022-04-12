@@ -10,7 +10,7 @@ class codigo{
     }
     setPrueba(intento)
     {
-        this.Prueba=this.intento;
+        this.Prueba = intento;
     }
     getPrueba()
     {

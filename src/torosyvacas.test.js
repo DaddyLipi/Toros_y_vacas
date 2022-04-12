@@ -9,5 +9,11 @@ describe("Tests clase toros y vacas", () => {
         ) => {
             const test = new codigo("12345",3);
           expect(test.getPrueba()).toEqual(3);
+    });
+    it("Modifica el intento", (
+        ) => {
+            let test = new codigo("12345",1);
+            test.setPrueba(2);
+          expect(test.getPrueba()).toEqual(2);
         });
   });
