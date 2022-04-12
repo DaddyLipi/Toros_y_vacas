@@ -9,6 +9,6 @@ forms.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let CSG = new codigo(CS.value);
-  div.innerHTML = "<p>" + CSG.getcodigolength() + "</p>";
+  div.innerHTML = "<p>" +CSG.getClave()+ CSG.getcodigolength() + "</p>";
   module.exports={GSG};
 });
