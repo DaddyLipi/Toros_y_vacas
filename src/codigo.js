@@ -18,7 +18,14 @@ class codigo{
     }
     separarClave()
     {
-        return this.Clave.split("");
+        if(this.Clave===undefined)
+        {
+            return 0;
+        }
+        else
+        {
+            return this.Clave.split("");
+        }
     }
     getcodigolength()
     {

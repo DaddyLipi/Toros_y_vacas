@@ -1,4 +1,5 @@
 import codigo from './codigo.js';
+import torosYvacas from './torosyvacas';
 describe("Tests clase toros y vacas", () => {
     it("Devuelve la cadena", (
     ) => {
@@ -26,5 +27,12 @@ describe("Tests clase toros y vacas", () => {
     ) => {
       let test = new codigo("12345",1);
       expect(test.getcodigolength()).toEqual(5);
+    });
+  });
+
+  describe("Tests juegos toros y vacas", () => {
+    it("Devuelve el tamanio de la cadena", (
+    ) => {
+      expect(torosYvacas()).toEqual(0);
     });
   });
