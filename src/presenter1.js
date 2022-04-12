@@ -1,14 +1,14 @@
 import codigo from './codigo';
-import {torosYvacas,victoria} from './torosyvacas';
 
 const CS = document.querySelector("#CodigoSecreto");
-const forms = document.querySelector("#form");
+const form1 = document.querySelector("#formInsertar");
 const div = document.querySelector("#resultado-divs");
 
-forms.addEventListener("submit", (event) => {
-  event.preventDefault();
 
-  let CSG = new codigo(CS.value);
-  div.innerHTML = "<p>" +CSG.getClave()+ CSG.getcodigolength() + "</p>";
-  module.exports={GSG};
-});
+form1.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const CSG = new codigo(CS.value);
+  div.innerHTML = "Tamaño del codigo:" + CSG.getcodigolength();
+  //CS.value="";
+})
+export default {CSG};

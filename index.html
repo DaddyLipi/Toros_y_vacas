@@ -1,16 +1,19 @@
 <html>
   <body>
     <h1>Ingrese el codigo secreto</h1>
-    <form id="form">
-      <label for="numero">Codigo:</label>
+    <form id="formInsertar">
+      <label for="numero">Codigo Secreto:</label>
       <input type="text" id="codigoSecreto" maxlength="6" minlength="4"/>
       <input type="submit" value="Inserte Codigo Secreto"/>
+      <div id="resultado-divs"></div>
     </form>
-    <label>Codigo Ingresado, y tamaño:</label>
-    <div id="resultado-divs"></div>
-    <a href="PantallaIntentos.html">
-      <input type="submit" value="Siguiente pagina" />
-    </a>
+    <form id="formAdivinar">
+      <label for="numero">Codigo Intento:</label>
+      <input type="text" id="codigoIntento" maxlength="6" minlength="4"/>
+      <input type="submit" value="Ingrese el intento de codigo"/>
+      <div id="resultado-div2"></div>
+    </form>
     <script type="module" src="./src/presenter1.js"></script>
+    <script type="module" src="./src/presenter2.js"></script>
   </body>
 </html>
