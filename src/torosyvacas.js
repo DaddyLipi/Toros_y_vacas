@@ -30,4 +30,10 @@ function torosYvacas(A,B,intento)
     }
     return VectorResultado;
 };
-export default torosYvacas;
+function victoria(Resultado)
+{
+    if(Resultado==="!!!!"){
+        return true;
+    }
+}
+export {torosYvacas,victoria};

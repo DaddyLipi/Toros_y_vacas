@@ -1,5 +1,5 @@
 import codigo from './codigo.js';
-import torosYvacas from './torosyvacas';
+import {torosYvacas,victoria} from './torosyvacas';
 describe("Tests clase toros y vacas", () => {
     it("Devuelve la cadena", (
     ) => {
@@ -43,4 +43,11 @@ describe("Tests clase toros y vacas", () => {
     it("Devuelve toros y vacas", () => {
         expect(torosYvacas("4123","4312")).toEqual("!***");
     });
+  });
+
+  describe("Tests victoria", () => {
+    it("Devuelve true si hay n toros", () => {
+      expect(victoria("!!!!")).toEqual(true);
+    });
+
   });
