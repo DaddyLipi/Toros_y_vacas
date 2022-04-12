@@ -35,13 +35,13 @@ describe("Tests clase toros y vacas", () => {
       expect(torosYvacas()).toEqual(0);
     });
     it("Devuelve un toro", () => {
-          expect(torosYvacas("1234","5638")).toEqual("!");
+          expect(torosYvacas("1234","5638")).toEqual("!*");
     });
     it("Devuelve un vaca", () => {
-        expect(torosYvacas("5674","4321")).toEqual("*");
+        expect(torosYvacas("5674","4321")).toEqual("#*");
     });
     it("Devuelve toros y vacas", () => {
-        expect(torosYvacas("4123","4312")).toEqual("!***");
+        expect(torosYvacas("4123","4312")).toEqual("!**##");
     });
     it("Devuelve ternera",()=>{
       expect(torosYvacas("1234","8765")).toEqual("#")

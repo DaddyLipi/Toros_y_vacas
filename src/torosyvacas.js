@@ -16,6 +16,10 @@ function torosYvacas(A,B,intento)
             {
                 VectorResultado=VectorResultado+"!";
             }
+            if(parseInt(CodigoSecreto.separarClave()[i])===(parseInt(Prueba.separarClave()[i])-1)||parseInt(CodigoSecreto.separarClave()[i])===(parseInt(Prueba.separarClave()[i])+1))
+            {
+                VectorResultado=VectorResultado+"#";
+            }
             else
             {
                 for(let j=0;j<Prueba.getcodigolength();j++)
