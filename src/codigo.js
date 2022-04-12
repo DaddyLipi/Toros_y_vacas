@@ -31,6 +31,13 @@ class codigo{
     {
         return this.separarClave().length;
     }
-
+    getbufalos()     
+    {         
+        let VectorBufalos = "";         
+        for(let i=0;i<this.getcodigolength();i++)         
+        {             
+            VectorBufalos=VectorBufalos+"%";         
+        }         return VectorBufalos;     
+    }
 }
 module.exports = codigo;
