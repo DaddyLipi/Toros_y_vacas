@@ -37,4 +37,7 @@ describe("Tests clase toros y vacas", () => {
     it("Devuelve un toro", () => {
           expect(torosYvacas("1234","5638")).toEqual("!");
     });
+    it("Devuelve un vaca", () => {
+        expect(torosYvacas("5674","4321")).toEqual("*");
+  });
   });
