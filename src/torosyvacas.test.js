@@ -21,10 +21,13 @@ describe("Tests clase toros y vacas", () => {
         ) => {
           let test = new codigo("12345",1);
           expect(test.separarClave()).toEqual(["1", "2", "3", "4", "5"]);
-          
+    });
+    it("Muestra los bufalos apenas se crea", (
+      ) => {
+        let test = new codigo("12345",1);
+        expect(test.getbufalos()).toEqual("%%%%%");
    });
-   it("Da el largo de la cadena", (
-    ) => {
+   it("Da el largo de la cadena", () => {
       let test = new codigo("12345",1);
       expect(test.getcodigolength()).toEqual(5);
     });
@@ -43,8 +46,8 @@ describe("Tests clase toros y vacas", () => {
     it("Devuelve toros y vacas", () => {
         expect(torosYvacas("4123","4312")).toEqual("!**##");
     });
-    it("Devuelve ternera",()=>{
-      expect(torosYvacas("1234","8765")).toEqual("#")
+    it("Devuelve ternera",() => {
+      expect(torosYvacas("1234","8765")).toEqual("#");
     });
   });
 
