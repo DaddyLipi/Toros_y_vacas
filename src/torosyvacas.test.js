@@ -31,8 +31,10 @@ describe("Tests clase toros y vacas", () => {
   });
 
   describe("Tests juegos toros y vacas", () => {
-    it("Devuelve el tamanio de la cadena", (
-    ) => {
+    it("Devuelve el tamanio de la cadena", () => {
       expect(torosYvacas()).toEqual(0);
+    });
+    it("Devuelve un toro", () => {
+          expect(torosYvacas("1234","5638")).toEqual("!");
     });
   });
