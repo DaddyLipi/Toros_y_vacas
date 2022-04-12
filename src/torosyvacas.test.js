@@ -15,5 +15,16 @@ describe("Tests clase toros y vacas", () => {
             let test = new codigo("12345",1);
             test.setPrueba(2);
           expect(test.getPrueba()).toEqual(2);
-        });
+    });
+    it("Separa la cadena", (
+        ) => {
+          let test = new codigo("12345",1);
+          expect(test.separarClave()).toEqual(["1", "2", "3", "4", "5"]);
+          
+   });
+   it("Da el largo de la cadena", (
+    ) => {
+      let test = new codigo("12345",1);
+      expect(test.getcodigolength()).toEqual(5);
+    });
   });

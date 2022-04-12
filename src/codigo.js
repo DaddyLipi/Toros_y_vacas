@@ -16,5 +16,14 @@ class codigo{
     {
         return this.Prueba;
     }
+    separarClave()
+    {
+        return this.Clave.split("");
+    }
+    getcodigolength()
+    {
+        return this.separarClave().length;
+    }
+
 }
 module.exports = codigo;
